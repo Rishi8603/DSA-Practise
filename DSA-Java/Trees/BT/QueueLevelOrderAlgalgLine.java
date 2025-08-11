@@ -30,7 +30,7 @@ public class QueueLevelOrderAlgalgLine {
         c.left=f;c.right=g;
         System.out.println(levelOrder(a));
     }
-    private static List<List<Integer>> levelOrder(Node root){
+    public static List<List<Integer>> levelOrder(Node root){
         List<List<Integer>> ans=new ArrayList<>();
 
         int lvl=Levels(root);
@@ -61,7 +61,7 @@ public class QueueLevelOrderAlgalgLine {
             if (front.node.right != null) q.add(new Pair(temp.right, lvl + 1));
         }
     }
-    private static int Levels(Node root){
+    public static int Levels(Node root){
         if(root==null) return 0;
         int a=Levels(root.left);
         int b=Levels(root.right);

@@ -63,7 +63,7 @@ public class PredAndSuccGFG {
 //            }
 //        }
 //    }
-//    private static void inorder(Node root, ArrayList<Node> list){
+//    public static void inorder(Node root, ArrayList<Node> list){
 //        if(root==null) return;//base case
 //
 //        inorder(root.left,list);//left subtree

@@ -22,7 +22,7 @@ public class BalancedBinaryTree {
         Levels(root,ans);//time comp=O(n)
         return ans[0];
     }
-    private static int Levels(Node root,boolean[] ans){
+    public static int Levels(Node root,boolean[] ans){
         if(root==null) return 0;
         int leftLevels=Levels(root.left,ans);
         int rightLevels =Levels(root.right,ans);

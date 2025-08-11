@@ -48,7 +48,7 @@ public class PrintLcsOptimal {
     }
 
     // Returns a list of all longest common subsequences for strings s and t.
-    public static List<String> all_longest_common_subsequences(String s, String t) {
+    private static List<String> all_longest_common_subsequences(String s, String t) {
         int n1 = s.length();
         int n2 = t.length();
 
@@ -66,10 +66,12 @@ public class PrintLcsOptimal {
         // Convert the set to a list and return.
         return new ArrayList<>(ansSet);
     }
-        public static void main(String[] args) {
-            String x="acbcf";
-            String y="abcdaf" ;
-            System.out.println(all_longest_common_subsequences(x,y));
-        }
+
+    public static void main(String[] args) {
+        String x="acbcf";
+        String y="abcdaf" ;
+        System.out.println(all_longest_common_subsequences(x,y));
     }
+
+}
 

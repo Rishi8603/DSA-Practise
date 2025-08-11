@@ -4,7 +4,7 @@ import Trees.Node;
 
 public class DisplayNodeOfTree {
     Node root;
-    private static void display(Node root){
+    public static void display(Node root){
         if(root==null) return;//base case
         System.out.print(root.val+" ");
         display(root.left);//left subtree

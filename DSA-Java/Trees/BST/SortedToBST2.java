@@ -25,7 +25,7 @@ public class SortedToBST2 {
         root.right=helper2(nums,mid+1,high);
         return root;
     }
-    private static void inorder(Node root,ArrayList<Integer> list){
+    public static void inorder(Node root,ArrayList<Integer> list){
         if(root==null) return;//base case
 
         inorder(root.left,list);//left subtree

@@ -1,20 +1,16 @@
 package DP.LCS;
 
-public class lowestCommonSubstring {
+public class longestCommonSubstring {
     public static void main(String[] args) {
-
+        String x="abcde";
+        String y="abfce";
+        System.out.println(longestCommonSubstr(x,y));
     }
     public static int longestCommonSubstr(String x, String y) {
         int n=x.length();
         int m=y.length();
 
         int[][] t=new int[n+1][m+1];
-        //intiallisation
-        for(int i=0;i<t.length;i++){
-            for(int j=0;j<t[0].length;j++){
-                if(i==0||j==0) t[i][j]=0;
-            }
-        }
 
         //main code
         int res=0;

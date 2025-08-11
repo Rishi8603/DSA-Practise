@@ -21,7 +21,7 @@ public class KthSmallestElementInBST {
         System.out.println(list);
         return list.get(k-1);
     }
-    private static void inorder(Node root,ArrayList<Integer> list){
+    public static void inorder(Node root,ArrayList<Integer> list){
         if(root==null) return;//base case
 
         inorder(root.left,list);//left subtree

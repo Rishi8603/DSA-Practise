@@ -23,7 +23,7 @@ public class Leetcode144BtPreorderTraversal {
 
     static List<Integer> ans;
 
-    private static void helper(Node root) {
+    public static void helper(Node root) {
         if (root == null) return;//base case
         ans.add(root.val);
         helper(root.left);//left subtree

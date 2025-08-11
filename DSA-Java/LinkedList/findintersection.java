@@ -1,18 +1,11 @@
 package LinkedList;
 
 public class findintersection {
-    public static class ListNode {
-        int val;
-        ListNode next;
-        ListNode() {}
-        ListNode(int val) { this.val = val; }
-        //ListNode(int val, ListNode next) { this.val = val; this.next = next; }
-    }
-    public static ListNode intersection(ListNode headA, ListNode headB){
-        ListNode temp1a = headA;
-        ListNode temp1b = headA;
-        ListNode temp2a = headB;
-        ListNode temp2b = headB;
+    public static Node intersection(Node headA, Node headB){
+        Node temp1a = headA;
+        Node temp1b = headA;
+        Node temp2a = headB;
+        Node temp2b = headB;
         int size1=0;
         int size2=0;
         while(temp1a !=null){
@@ -42,10 +35,10 @@ public class findintersection {
         }
         return null;
     }
-    public static void display(ListNode head1, ListNode head2,ListNode head3){
-       ListNode temp1=head1;
-       ListNode temp2=head2;
-        ListNode temp3=head3;
+    public static void display(Node head1, Node head2,Node head3){
+        Node temp1=head1;
+        Node temp2=head2;
+        Node temp3=head3;
         while(temp1!=temp3){
             System.out.print(temp1.val+" ");
             temp1=temp1.next;
@@ -66,16 +59,16 @@ public class findintersection {
     }
 
     public static void main(String[] args) {
-        ListNode a1=new ListNode(4);
-        ListNode a2=new ListNode(1);
+        Node a1=new Node(4);
+        Node a2=new Node(1);
 
-        ListNode b1=new ListNode(5);
-        ListNode b2=new ListNode(6);
-        ListNode b3=new ListNode(1);
+        Node b1=new Node(5);
+        Node b2=new Node(6);
+        Node b3=new Node(1);
 
-        ListNode c1=new ListNode(8);
-        ListNode c2=new ListNode(4);
-        ListNode c3 =new ListNode(5);
+        Node c1=new Node(8);
+        Node c2=new Node(4);
+        Node c3 =new Node(5);
 
         a1.next=a2;
         a2.next=c1;

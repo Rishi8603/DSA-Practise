@@ -20,6 +20,7 @@ public class MergeSortConcept {
         int[] temp=merge(left,right);
         return temp;
     }
+    //merging usning two pointer approach
     public static int[] merge(int[] first,int[] second){
         int[] mix=new int[first.length+second.length];
         int i=0,j=0,k=0;

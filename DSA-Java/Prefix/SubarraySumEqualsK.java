@@ -4,8 +4,8 @@ import java.util.HashMap;
 
 public class SubarraySumEqualsK {
     public static void main(String[] args) {
-        int[] nums={1,1,1};
-        System.out.println(subarraySum(nums,2));
+        int[] nums={1,2,4,3,-3,0,7,8,-1};
+        System.out.println(subarraySum(nums,7));
     }
     public static int subarraySum(int[] nums, int k) {
         int n=nums.length;

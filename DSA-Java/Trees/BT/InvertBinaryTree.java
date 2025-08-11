@@ -4,13 +4,13 @@ import Trees.Node;
 
 public class InvertBinaryTree {
     Node root;
-    private static void preorder(Node root){
+    public static void preorder(Node root){
         if(root==null) return;//base case
         System.out.print(root.val+" ");
         preorder(root.left);//left subtree
         preorder(root.right);//right subtree
     }
-    private static void reverse(Node root){
+    public static void reverse(Node root){
         Node temp;
         if(root==null) return;
         if(root.left==null&&root.right==null) {

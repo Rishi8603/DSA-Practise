@@ -17,4 +17,7 @@ public class ModularExponentiation {
         else
             return (x * (half * half % mod)) % mod;  // Multiply x if y is odd
     }
+    private static long modInverse(long a, int mod) {
+        return modPower(a, mod - 2, mod);
+    }
 }

@@ -35,13 +35,13 @@ public class BinaryTreeRightSideView {
         return list;
     }
 
-    private static void  nthLevel(Node root,int level,int n,List<Integer> list){
+    public static void  nthLevel(Node root,int level,int n,List<Integer> list){
         if(root==null) return ;//base case
         if(level==n) list.add(root.val);
         nthLevel(root.left,level+1,n,list);//left subtree
         nthLevel(root.right,level+1,n,list);//right subtree
     }
-    private static int Levels(Node root){
+    public static int Levels(Node root){
         if(root==null) return 0;
         int a=Levels(root.left);
         int b=Levels(root.right);

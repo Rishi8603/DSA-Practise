@@ -1,4 +1,4 @@
-package BitManipulation;
+package LinkedList;
 
 public class LLimplementation {
     public static class Node{//user defined datatype

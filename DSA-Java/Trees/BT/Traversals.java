@@ -6,27 +6,27 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class Traversals {
-    private static void preorder(Node root){
+    public static void preorder(Node root){
         if(root==null) return;//base case
         System.out.print(root.val+" ");
         preorder(root.left);//left subtree
         preorder(root.right);//right subtree
     }
-    private static void inorder(Node root){
+    public static void inorder(Node root){
         if(root==null) return;//base case
 
         inorder(root.left);//left subtree
         System.out.print(root.val+" ");
         inorder(root.right);//right subtree
     }
-    private static void postorder(Node root){
+    public static void postorder(Node root){
         if(root==null) return;//base case
 
         postorder(root.left);//left subtree
         postorder(root.right);//right subtreef
         System.out.print(root.val+" ");
     }
-    private static void levelOrder(Node root){
+    public static void levelOrder(Node root){
         Queue<Node> q=new LinkedList<>();
         if(root!=null) q.add(root);
         while(q.size()>0){
@@ -37,7 +37,7 @@ public class Traversals {
         }
     }
     static int n=2;
-    private static void nthLevel(Node root,int level){
+    public static void nthLevel(Node root,int level){
         if(root==null) return;//base case
         if(level==n) System.out.print(root.val+" ");
         nthLevel(root.left,level+1);//left subtree

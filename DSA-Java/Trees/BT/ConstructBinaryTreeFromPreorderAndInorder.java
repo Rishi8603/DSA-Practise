@@ -37,7 +37,7 @@ public class ConstructBinaryTreeFromPreorderAndInorder {
 
 
 
-    private static void levelOrder(Node root){
+    public static void levelOrder(Node root){
         Queue<Node> q=new LinkedList<>();
         if(root!=null) q.add(root);
         while(q.size()>0){

@@ -16,15 +16,10 @@ public class basicsLL {
             temp=temp.next;
         }
         //without temp variable
-//        while(head!=null){
-//            System.out.print(head.data+" ");
-//            head=head.next;
-//        }
 //       while(head!=null){//ye wala loop nhi chalega
 //            System.out.print(head.data+" ");
 //            head=head.next;
 //        }
-
     }
 
     public static class Node{

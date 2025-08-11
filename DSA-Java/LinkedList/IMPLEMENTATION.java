@@ -1,13 +1,7 @@
 package LinkedList;
 
-public class implementation {
-    public static class Node{
-        int data;
-        Node next;
-        Node(int data){
-            this.data=data;
-        }
-    }
+public class IMPLEMENTATION {
+
     public static class linkedlist{
         Node head=null; //user defined datatype
         Node tail=null;
@@ -64,7 +58,7 @@ public class implementation {
             for (int i = 1; i <=idx ; i++) {
                 temp=temp.next;
             }
-            return temp.data;
+            return temp.val;
         }
         void deleteAt(int idx){
             Node temp=head;
@@ -82,7 +76,7 @@ public class implementation {
         void display(){
             Node temp=head;
             while(temp!=null){
-                System.out.print(temp.data+" ");
+                System.out.print(temp.val+" ");
                 temp=temp.next;
             }
             System.out.println();
@@ -116,7 +110,7 @@ public class implementation {
         ll.display();//20-4-11-5-12
         ll.insetAt(5,19);//insertAtEnd wala condition
         ll.display();//20-4-11-5-12
-        System.out.println(ll.tail.data);
+        System.out.println(ll.tail.val);
         ll.insetAt(0,1);//insetAtStart wala condition
         ll.display();//1- 20- 4- 11- 5- 12
         ll.insetAt(-2,1);

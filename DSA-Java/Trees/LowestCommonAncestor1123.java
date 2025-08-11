@@ -36,7 +36,7 @@ public class LowestCommonAncestor1123 {
             return root;
         }
     }
-    private static int Levels(Node root){
+    public static int Levels(Node root){
         if(root==null) return 0;
         int a=Levels(root.left);
         int b=Levels(root.right);

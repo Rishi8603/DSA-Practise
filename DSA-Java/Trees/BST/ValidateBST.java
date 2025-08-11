@@ -24,12 +24,12 @@ public class ValidateBST {
         }
         return isValidBST(root.left)  && isValidBST(root.right);
     }
-    private static int Maximum(Node root){
+    public static int Maximum(Node root){
         if(root==null) return Integer.MIN_VALUE;
         int a=Math.max(Maximum(root.left), Maximum(root.right));
         return Math.max(root.val,a);
     }
-    private static int Minimum(Node root){
+    public static int Minimum(Node root){
         if(root==null) return Integer.MAX_VALUE;
         int a=Math.min(Minimum(root.left), Minimum(root.right));
         return Math.min(root.val,a);

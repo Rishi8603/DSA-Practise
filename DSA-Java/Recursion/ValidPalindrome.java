@@ -17,7 +17,7 @@ public class ValidPalindrome {
         return isPalindrome(result, 0, result.length() - 1);
     }
 
-    private static boolean isPalindrome(String result, int start, int end) {
+    public static boolean isPalindrome(String result, int start, int end) {
 
         // Base case: if start >= end, it's a palindrome
         if (start >= end) {

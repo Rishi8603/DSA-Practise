@@ -4,13 +4,13 @@ import Trees.Node;
 
 public class DiameterOfBinartTree {
     Node root;
-    private static int Levels(Node root){
+    public static int Levels(Node root){
         if(root==null) return 0;
         int a=Levels(root.left);
         int b=Levels(root.right);
         return 1+Math.max(a,b);
     }
-    private static int diameterOfBinaryTree(Node root){
+    public static int diameterOfBinaryTree(Node root){
         if(root==null) return 0;
         int L1=Levels(root.left);
         int L2=Levels(root.right);

@@ -27,7 +27,7 @@ public class Dfs {
         return dfs3(source, visited, adj, destination);
     }
 
-    private static boolean dfs3(int source, boolean[] visited, List<List<Integer>> adj, int destination) {
+    public static boolean dfs3(int source, boolean[] visited, List<List<Integer>> adj, int destination) {
         if (source == destination) return true; // If we reach the destination, return true
 
         visited[source] = true;
@@ -54,7 +54,7 @@ public class Dfs {
         return true;
     }
 
-    private static void dfs2(int i, boolean[] visited, List<List<Integer>> rooms) {
+    public static void dfs2(int i, boolean[] visited, List<List<Integer>> rooms) {
         int n=rooms.size();
         visited[i]=true;
         for (int j = 0; j < rooms.get(i).size(); j++) {
@@ -83,7 +83,7 @@ public class Dfs {
         return count;
     }
 
-    private static void dfs1(boolean[][] visited, char[][] grid, int i, int j) {
+    public static void dfs1(boolean[][] visited, char[][] grid, int i, int j) {
         int n=grid[0].length;
         int m=grid.length   ;
         visited[i][j]=true;
@@ -120,7 +120,7 @@ public class Dfs {
         return count;
     }
 
-    private static void dfs(int i, boolean[] visited, int[][] isConnected) {
+    public static void dfs(int i, boolean[] visited, int[][] isConnected) {
         int n=isConnected.length    ;
         visited[i]=true;
         for (int j = 0; j < isConnected.length; j++) {
